@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício Teste</title>
+</head>
+<body>
+    <h1>Nacionalidade - TESTE</h1>
+    Qual sua nacionalidade?: <input type="text" name="txtnat" id="txtnat">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function verificar() {
+            var res = document.querySelector('div#res')
+            var nat = document.querySelector('#txtnat').value
+            nat = nat.toLowerCase().trim()
+            res.innerHTML = `<p>Sua nacionalidade é <strong>${nat}</strong>.</p>`
+            if (nat == "brasileira" || nat == "brasileiro") {
+                res.innerHTML += `<p>Você é <strong>BRASILEIRO</strong>.</p>`
+            } else {
+                res.innerHTML += `<p>Você é <strong>ESTRANGEIRO</strong>.</p>`
+            }
+        }
+    </script>
+</body>
+</html>

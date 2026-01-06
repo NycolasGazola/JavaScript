@@ -11,20 +11,14 @@
         <h1>Vamos contar
     </header>
     <section>
-        <div>
-        <p>Início: 
-            <input type="number" name="inicio" id="inicio" value="0" placeholder="Digite o valor inicial">
-        </p>
-        <p>Fim:
-            <input type="number" name="fim" id="fim" value="10" placeholder="Digite o valor final">
-        </p>
-        <p>Passo:
-            <input type="number" name="passo" id="passo" value="1" placeholder="Digite o valor do passo">
-        </p>
+        <div id="dados">
+       <p>Início: <input type="number" name="ini" id="txti"></p>
+       <p>Fim: <input type="number" name="fim" id="txtf"></p>
+       <p>Passo: <input type="number" name="passo" id="txtp"></p>
+       <p><input type="button" value="Contar" onclick="contar()"></p>
         </div>
-        <div>
-            <input type="button" value="Contar" onclick="contar()"><br><br>
-            Impossível contar!!
+        <div id="res">
+            Preparando a contagem ...
         </div>
     </section>
 
